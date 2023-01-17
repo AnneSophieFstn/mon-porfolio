@@ -80,6 +80,7 @@ const routes = [
 
 const router = new Router({
   mode: "history",
+  history: createWebHistory("/mon-portfolio/"),
   routes
 });
 
