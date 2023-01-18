@@ -2,7 +2,7 @@
   <div id="Apropos" class="about">
     <h1>A propos</h1>
     <div class="box">
-      <div class="img"></div>
+      <img class="img" src="../assets/me.jpg" alt="annesophie" />
       <div class="contentText">
         <h2>Qui suis-je ?</h2>
         <br />
@@ -72,11 +72,7 @@ h1 {
 
 .img {
   position: relative;
-  background: url("../assets/me.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 70vh;
-  width: 40%;
+  width: 30%;
   margin-left: 2rem;
   margin-right: 2rem;
   border-radius: 50%;
