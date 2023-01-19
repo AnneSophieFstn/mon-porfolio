@@ -1,21 +1,35 @@
-# mon-portfolio
+# Publish VueJs project on GitHub Pages
 
-> Mon portfolio
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+Create **"vue.config.js "** file and add : 
 ```
+module.exports = {
+	publicPath:  process.env.NODE_ENV === "production" ? "/NAME-PROJECT/" : "/",
+	transpileDependencies: ["vuetify"],
+	outputDir:  "docs"
+};
+``` 
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Inside **"package.json"** add : 
+``` 
+- "homepage": "FULL-LINK-PROJECT"
+- "predeploy": "npm run build",
+- "deploy": "gh-pages -d docs"
+```
+If error with command "gh-pages" install package [here](https://www.npmjs.com/package/gh-pages).
+
+Inside **"config/index.js"** files, in **"build"** section change value ```assetsPublicPath:``` to   ```"./"```
+
+Now run 
+```
+- npm run deploy
+- git add .
+- git commit -m "first commit"
+- git push
+```
+In your repository github, go to ```Settings``` --> ```Pages```
+Choose ```gh-pages``` and ```root```
+Save and visite your link.
+
+Enjoy :)
+
+**PS:** Idk if it's really work but if you have a blank page go to your **router file** and change ```/``` by ```/NAME-PROJECT```.
