@@ -3,7 +3,7 @@
     <div class="modal-overlay" @click="$emit('close-modal')">
       <div class="modal" @click.stop>
         <div class="modal-header">
-          <h5>Site officiel - Croix-Rouge Réunion</h5>
+          <h5>Site officiel - Croix-Rouge Française de la Réunion</h5>
           <button
             type="button"
             class="close"

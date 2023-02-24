@@ -46,7 +46,13 @@
             </div>
             <div class="site">
               <h3 class="card-header">Site</h3>
-              <p class="info-text">TEST</p>
+              <ul>
+                <li>
+                  <a href="https://annesophiefstn.github.io/mon-porfolio/"
+                    >Mon portfolio</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>

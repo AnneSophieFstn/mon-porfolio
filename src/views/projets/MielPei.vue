@@ -16,7 +16,17 @@
         </div>
         <div class="block-info">
           <div class="demo">
-            <img src="../../assets/projets/miel.png" alt="miel" width="500" />
+            <v-carousel>
+              <v-carousel-item
+                v-for="(item, i) in items"
+                :key="i"
+                :src="item.src"
+                contain
+                width="500"
+                reverse-transition="fade-transition"
+                transition="fade-transition"
+              ></v-carousel-item>
+            </v-carousel>
           </div>
           <div class="blooock">
             <div class="intro">
@@ -59,7 +69,9 @@
             </div>
             <div class="site">
               <h3 class="card-header">Site</h3>
-              <p class="info-text">TEST</p>
+              <a href="https://github.com/AnneSophieFstn/cda-ecommerce.git">
+                Projet github
+              </a>
             </div>
           </div>
         </div>
@@ -69,6 +81,21 @@
   </transition>
 </template>
 <script>
-export default {};
+export default {
+  data: () => ({
+    model: 0,
+    items: [
+      {
+        src: require("../../assets/pages-mielpei/accueil.png")
+      },
+      {
+        src: require("../../assets/pages-mielpei/fiche-miel.png")
+      },
+      {
+        src: require("../../assets/pages-mielpei/panier.png")
+      }
+    ]
+  })
+};
 </script>
 <style></style>

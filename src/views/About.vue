@@ -33,9 +33,15 @@
         </p>
 
         <div class="btn-center">
-          <v-btn color="error" @click="btnCV">
-            MON CV
-          </v-btn>
+          <a
+            href="https://www.linkedin.com/in/annesophie-faustino"
+            target="_blank"
+          >
+            <img src="../assets/logo/linkedin.png" alt="" width="50px" />
+          </a>
+          <a href="https://github.com/AnneSophieFstn" target="_blank">
+            <img src="../assets/logo/github.png" alt="" width="50px" />
+          </a>
         </div>
       </div>
     </div>
@@ -43,12 +49,16 @@
 </template>
 
 <script>
+import pdf from "vue-pdf";
 export default {
   name: "About",
+  components: {
+    pdf
+  },
 
   methods: {
     btnCV() {
-      console.log("MON CV");
+      window.open("../assets/CV_Anne-Sophie_Faustino_dev.pdf", "_blank"); //to open in new tab
     }
   }
 };

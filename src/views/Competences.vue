@@ -51,7 +51,7 @@
           <span>REACT</span>
         </div>
         <div>
-          <img src="../assets/logo/GITHUB.png" alt="" width="50px" />
+          <img src="../assets/logo/github.png" alt="" width="50px" />
           <span>GITHUB</span>
         </div>
         <div>

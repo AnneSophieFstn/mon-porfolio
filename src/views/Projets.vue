@@ -62,7 +62,8 @@
           <v-card-title> Site Croix-Rouge Réunion </v-card-title>
 
           <v-card-subtitle>
-            Création et mis à jour du site Croix-Rouge Réunion.
+            Refonte complète du site internet de la Croix-Rouge Française à la
+            Réunion.
           </v-card-subtitle>
 
           <v-card-actions>

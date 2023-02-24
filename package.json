@@ -13,8 +13,10 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "elastic-email": "^1.0.4",
     "gh-pages": "^4.0.0",
     "vue": "^2.5.2",
+    "vue-pdf": "^4.3.0",
     "vue-router": "^3.0.1",
     "vuetify": "^2.6.6"
   },
