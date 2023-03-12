@@ -4,7 +4,7 @@
   "description": "Mon portfolio",
   "author": "Anne-Sophie Faustino <annesophe.faustino@gmail.com>",
   "private": true,
-  "homepage": "https://annesophiefstn.github.io/mon-porfolio/",
+  "homepage": "https://annesophiefstn.github.io/mon-porfolio",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
