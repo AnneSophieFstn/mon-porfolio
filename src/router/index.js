@@ -17,7 +17,7 @@ Vue.use(Router);
 
 const routes = [
   {
-    path: "/",
+    path: "/mon-portfolio",
     name: "NavBar",
     component: NavBar
   },
