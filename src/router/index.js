@@ -67,7 +67,7 @@ const routes = [
     component: MielPei
   },
   {
-    path: "/mon-portfolio",
+    path: "/portfolio",
     name: "MonPortfolio",
     component: MonPortfolio
   },
@@ -80,7 +80,6 @@ const routes = [
 
 const router = new Router({
   mode: "history",
-  base: "/mon-portfolio/",
   routes
 });
 
